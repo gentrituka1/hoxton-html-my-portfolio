@@ -74,7 +74,7 @@ header{
 b{
   color: #00ffff60;
 }
-.arrow{
+.arrow{  
   text-align: center;
   color: white;
 }
@@ -194,9 +194,13 @@ h3{
 
 footer{
   grid-area: footer;
-  background-color: #000000;
+  background-color: 35382e;
   color: white;
   display: grid;
   place-items: center;
   font-size: 10px;
+}
+footer a{
+  text-decoration: none;
+  color: white;
 }
