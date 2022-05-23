@@ -21,7 +21,7 @@ header{
   display: grid;
   padding: 15px;
 }
-.header-1{
+.header-menu{
   display: grid;
   grid-auto-flow: column;
   border: 1px solid black;
@@ -46,6 +46,36 @@ header{
   font-size: 11px;
   padding-bottom: 3px;
 }
+.header-right-menu a{
+  text-decoration: none;
+  color: white;
+}
+
+.header-adv{
+  border: 1px solid black;
+  margin: 100px 100px;
+  padding: 15px;
+  background-color: 35382e;
+}
+
+.header-adv h2{
+  display: grid;
+  place-content: center;
+  color: gold;
+}
+
+.header-adv p{
+  padding: 5px;
+  color: white;
+}
+.paragraph-1{
+  display: inline;
+}
+b{
+  color: #00ffff60;
+}
+
+
 
 /* Projects section*/
 
@@ -69,5 +99,5 @@ footer{
   color: white;
   display: grid;
   place-items: center;
-  font-size: 10px
+  font-size: 10px;
 }
