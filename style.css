@@ -8,8 +8,8 @@ body{
   grid-auto-flow: row;
   grid-template:
     'header' 1fr
-    'projects' 150px
-    'experience' 150px
+    'projects' auto
+    'experience' auto
     'footer' 20px;
 }
 
@@ -74,27 +74,126 @@ header{
 b{
   color: #00ffff60;
 }
-
+.arrow{
+  text-align: center;
+  color: white;
+}
 
 
 /* Projects section*/
 
 .projects{
-  grid-section: projects;
-  background-color: #80808050;
+  grid-area: projects;
+  background-color: #ede6e2;
+  
+  display: grid;
+  grid-template: 
+  '. projects-h3 .' 1fr
+  'first-menu second-menu third-menu' auto/
+    auto auto auto;
+  gap: 20px;
+
 }
+.first-menu{
+  grid-area: first-menu;
+  border: 1px solid black;
+  padding: 20px;
+  margin-left: 150px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+.second-menu{
+  grid-area: second-menu;
+  padding: 20px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  background-color: white;
+}
+.third-menu{
+  grid-area: third-menu;
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 10px;
+  margin-right: 150px;
+  background-color: white;
+}
+.projects-h3{
+  grid-area: projects-h3;
+}
+h4{
+  color: rgb(226, 105, 5);
+}
+
+h3{
+  text-align: center;
+  padding-top: 20px;
+}
+
 
 /* Experience section */
 
 .experience{
-  grid-section: experience;
-  background-color: #0000ff50;
+  grid-area: experience;
+  background-color: #5bc3eb;
+  
+  display: grid;
+  gap: 10px;
 }
+.first-row{
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0px 250px;
+  background-color: white;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 180px 1fr 180px;
+  text-align: center;
+}
+.second-row{
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0px 250px;
+  background-color: white;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 180px 1fr 180px;
+  text-align: center;
+}
+.third-row{
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0px 250px;
+  background-color: white;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 180px 1fr 180px;
+  text-align: center;
+}
+.fourth-row{
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0px 250px;
+  margin-bottom: 50px;
+  background-color: white;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 180px 1fr 180px;
+  text-align: center;
+}
+
 
 /* Footer section */
 
 footer{
-  grid-section: footer;
+  grid-area: footer;
   background-color: #000000;
   color: white;
   display: grid;
